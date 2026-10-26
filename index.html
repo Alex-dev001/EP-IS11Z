@@ -1,39 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Brazii de Aur - cabane, relaxare și activități în Munții Carpați.">
+    <title>Brazii de Aur | Relaxare în munți</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav__content">
-            <span>📞 069 740 740 · ✉ rezervari@brazii.md</span>
-            <div class="nav__item">Recepție deschisă non-stop</div>
+    <div class="contact-bar">
+        <div class="contact-bar__inner">
+            <span>☎ 069 740 740 · ✉ rezervari@brazii.md</span>
+            <span>Recepție deschisă non-stop</span>
         </div>
-    </nav>
+    </div>
 
-    <header class="header">
-        <div class="header__logo">🌲 Brazii de Aur</div>
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="Brazii de Aur - Acasă">
+            <span class="brand__icon" aria-hidden="true">🌲</span>
+            <span>Brazii de Aur</span>
+        </a>
 
-        <nav class="header__menu" aria-label="Main menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">Acasă</li>
-                <li class="header__menu-item">Camere</li>
-                <li class="header__menu-item">Activități</li>
-                <li class="header__menu-item">Galerie</li>
-                <li class="header__menu-item">Contact</li>
-            </ul>
+        <nav class="main-nav" aria-label="Meniu principal">
+            <a class="main-nav__link main-nav__link--active" href="#acasa">Acasă</a>
+            <a class="main-nav__link" href="#camere">Camere</a>
+            <a class="main-nav__link" href="#experienta">Activități</a>
+            <a class="main-nav__link" href="#galerie">Galerie</a>
+            <a class="main-nav__link" href="#contact">Contact</a>
         </nav>
 
-        <div class="header__container">
-            <div class="header__container-item">Rezervă acum</div>
-        </div>
-
-        <div class="header_image">
-            
-            </div>
+        <span class="header-button">Rezervă camera</span>
     </header>
-</body>
+
+    <main>
+        <section class="hero" id="acasa">
+            <div class="hero__content">
+                <span class="hero__badge">La 1.300 m altitudine</span>
+                <h1><span>Liniștea</span> muntelui, la o zi de Chișinău</h1>
+                <p>Hotel boutique cu 28 de camere în Carpați, cu vedere spre pădurea de brazi. Saună, ciubăr cu apă caldă, trasee montane și bucătărie tradițională.</p>
+                <div class="hero__actions">
+                    <span class="button button--gold">Verifică datele</span>
+                    <span class="button button--outline">Vezi camerele</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats" aria-label="Brazii de Aur pe scurt">
+            <div class="stats__item">
+                <strong>28</strong>
+                <span>camere</span>
+            </div>
+            <div class="stats__item">
+                <strong>1.300 m</strong>
+                <span>altitudine</span>
+            </div>
+            <div class="stats__item">
+                <strong>12</strong>
+                <span>trasee marcate</span>
+            </div>
+            <div class="stats__item">
+                <strong>9.4</strong>
+                <span>nota oaspeților</span>
+            </div>
+        </section>
+    </body>
 </html>
