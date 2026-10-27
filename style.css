@@ -198,6 +198,10 @@ button {
     max-width: 1180px;
     padding: 0 17px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 28px;
+    align-items: start;
 }
 
 .experience__intro {
@@ -241,4 +245,45 @@ button {
     color: #FFF;
     font-size: 15px;
     font-weight: 600;
+}
+
+.experience__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding-top: 20px;
+}
+
+.experience-card {
+    min-height: 170px;
+    padding: 18px 18px;
+    border: 1px solid #E2E7EB;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.experience-card__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #E8EFE7;
+    font-size: 24px;
+}
+
+.experience-card h3 {
+    margin: 0 0 5px;
+    color: #1B2C22;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.experience-card p {
+    margin: 0;
+    color: #718198;
+    font-size: 14px;
+    line-height: 1.5;
 }
