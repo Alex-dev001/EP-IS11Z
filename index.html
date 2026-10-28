@@ -7,11 +7,11 @@
     <title>Brazii de Aur | Relaxare în munți</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600,700|Work+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div class="contact-bar">
+    <div class="contact-bar" id="contact">
         <div class="contact-bar__inner">
             <span>☎ 069 740 740 · ✉ rezervari@brazii.md</span>
             <span>Recepție deschisă non-stop</span>
@@ -19,20 +19,20 @@
     </div>
 
     <header class="site-header">
-        <a class="brand" href="#" aria-label="Brazii de Aur - Acasă">
+        <div class="brand">
             <span class="brand__icon" aria-hidden="true">🌲</span>
             <span>Brazii de Aur</span>
-        </a>
+        </div>
 
         <nav class="main-nav" aria-label="Meniu principal">
-            <a class="main-nav__link main-nav__link--active" href="#acasa">Acasă</a>
-            <a class="main-nav__link" href="#camere">Camere</a>
-            <a class="main-nav__link" href="#experienta">Activități</a>
-            <a class="main-nav__link" href="#galerie">Galerie</a>
-            <a class="main-nav__link" href="#contact">Contact</a>
+            <a href="#acasa" class="main-nav__link main-nav__link--active">Acasă</a>
+            <a href="#camere" class="main-nav__link">Camere</a>
+            <a href="#experienta" class="main-nav__link">Activități</a>
+            <a href="#camere" class="main-nav__link">Galerie</a>
+            <a href="#contact" class="main-nav__link">Contact</a>
         </nav>
 
-        <span class="header-button">Rezervă camera</span>
+        <a href="#camere" class="header-button">Rezervă camera</a>
     </header>
 
     <main class="page-shell">
@@ -42,8 +42,8 @@
                 <h1><span>Liniștea</span> muntelui, la o zi de Chișinău</h1>
                 <p>Hotel boutique cu 28 de camere în Carpați, cu vedere spre pădurea de brazi. Saună, ciubăr cu apă caldă, trasee montane și bucătărie tradițională.</p>
                 <div class="hero__actions">
-                    <span class="button button--gold">Verifică datele</span>
-                    <span class="button button--outline">Vezi camerele</span>
+                    <a href="#experienta" class="button button--gold">Verifică datele</a>
+                    <a href="#camere" class="button button--outline">Vezi camerele</a>
                 </div>
             </div>
         </section>
@@ -73,7 +73,7 @@
                     <span class="experience__label">EXPERIENŢA</span>
                     <h2>Tot ce lipsește din oraș</h2>
                     <p>Aer curat, liniște și timp doar pentru tine și cei dragi.</p>
-                    <span class="experience__button">Planificați sejurul</span>
+                    <a href="#camere" class="experience__button">Planificați sejurul</a>
                 </div>
 
                 <div class="experience__grid">
@@ -98,6 +98,99 @@
                         <p>Balmoș, păstrăv și brânză de la stâna vecină.</p>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section class="rooms-page" id="camere">
+            <header class="rooms-heading">
+                <span>CAMERE</span>
+                <h2>Alege-ți camera</h2>
+                <p>Prețuri pe noapte, cu mic dejun inclus și vedere spre munte.</p>
+            </header>
+
+            <div class="rooms-grid">
+                <article class="room-card">
+                    <div class="room-photo room-photo--double">
+                        <img src="image2.jpg" alt="Cameră dublă cu pat matrimonial">
+                        <span class="room-favorite">♡</span>
+                    </div>
+                    <h3>Cameră dublă</h3>
+                    <p>2 persoane · 22 m²</p>
+                    <div class="room-card__bottom"><span>1400 lei</span><span class="room-add">+</span></div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-photo room-photo--balcony">
+                        <img src="image3.jpg" alt="Cameră cu balcon și vedere spre munți">
+                        <span class="room-badge">TOP</span>
+                        <span class="room-favorite">♡</span>
+                    </div>
+                    <h3>Cameră cu balcon</h3>
+                    <p>2 persoane · vedere</p>
+                    <div class="room-card__bottom"><span>1700 lei</span><span class="room-add">+</span></div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-photo room-photo--family">
+                        <img src="image4.jpg" alt="Cameră familială decorată clasic">
+                        <span class="room-favorite">♡</span>
+                    </div>
+                    <h3>Cameră familială</h3>
+                    <p>4 persoane · 34 m²</p>
+                    <div class="room-card__bottom"><span>2300 lei</span><span class="room-add">+</span></div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-photo room-photo--suite">
+                        <img src="image5.jpg" alt="Suită cu șemineu și mobilier clasic">
+                        <span class="room-badge">-11%</span>
+                        <span class="room-favorite">♡</span>
+                    </div>
+                    <h3>Suită cu șemineu</h3>
+                    <p>2 persoane · 45 m²</p>
+                    <div class="room-card__bottom"><span>3200 lei <del>3600 lei</del></span><span class="room-add">+</span></div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-photo room-photo--cabin">
+                        <img src="image6.jpg" alt="Cabană din lemn în pădurea de munte">
+                        <span class="room-badge">NOU</span>
+                        <span class="room-favorite">♡</span>
+                    </div>
+                    <h3>Cabană din lemn</h3>
+                    <p>6 persoane · 80 m²</p>
+                    <div class="room-card__bottom"><span>4500 lei</span><span class="room-add">+</span></div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-photo room-photo--attic">
+                        <img src="image7.jpg" alt="Cameră mansardă cu pat dublu">
+                        <span class="room-favorite">♡</span>
+                    </div>
+                    <h3>Mansardă</h3>
+                    <p>2 persoane · romantic</p>
+                    <div class="room-card__bottom"><span>1900 lei</span><span class="room-add">+</span></div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-photo room-photo--single">
+                        <img src="image8.jpg" alt="Cameră single luminoasă">
+                        <span class="room-favorite">♡</span>
+                    </div>
+                    <h3>Cameră single</h3>
+                    <p>1 persoană · 16 m²</p>
+                    <div class="room-card__bottom"><span>950 lei</span><span class="room-add">+</span></div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-photo room-photo--apartment">
+                        <img src="image9.jpg" alt="Apartament cu bucătărie modernă">
+                        <span class="room-favorite">♡</span>
+                    </div>
+                    <h3>Apartament</h3>
+                    <p>4 persoane · bucătărie</p>
+                    <div class="room-card__bottom"><span>2800 lei</span><span class="room-add">+</span></div>
+                </article>
             </div>
         </section>
     </main>
