@@ -25,6 +25,7 @@ button {
     justify-content: space-between;
     background-color: #14201A;
     color: #D7DED9;
+    font-family: "Work Sans", sans-serif;
     font-size: 14px;
 }
 
@@ -38,6 +39,7 @@ button {
     align-items: center;
     justify-content: space-between;
     background-color: #F7F5F2;
+    font-family: "Work Sans", sans-serif;
 }
 
 .brand {
@@ -45,7 +47,7 @@ button {
     align-items: center;
     gap: 8px;
     color: #284832;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -58,7 +60,7 @@ button {
     align-items: center;
     gap: 32px;
     color: #647080;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .main-nav__link {
@@ -84,7 +86,7 @@ button {
     background-color: #31583A;
     color: white;
     font-family: "Work Sans", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -102,10 +104,11 @@ button {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    background-image: linear-gradient(rgba(15, 27, 37, 0.68), rgba(15, 27, 37, 0.72)), url("image1.png");
+    background-image: url("image1.png");
     background-position: center;
     background-size: cover;
     color: white;
+    font-family: "Work Sans", sans-serif;
     text-align: center;
 }
 
@@ -120,7 +123,7 @@ button {
     border-radius: 24px;
     background-color: #A96800;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -137,7 +140,7 @@ button {
     max-width: 720px;
     margin: 28px auto 0;
     color: #ECEEF1;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -157,10 +160,10 @@ button {
     border-radius: 5px;
     color: white;
     font-family: "Work Sans", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
 }
 
 .button--gold {
@@ -184,6 +187,7 @@ button {
     box-shadow: 0 10px 20px rgba(22, 29, 25, 0.08);
     background-color: rgba(255, 255, 255, 0.98);
     color: #31583A;
+    font-family: "Work Sans", sans-serif;
 }
 
 .stats__item {
@@ -201,13 +205,14 @@ button {
 }
 
 .stats__item strong {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1;
+    font-family: "Cormorant Garamond", serif;
 }
 
 .stats__item span {
     color: #8390A2;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -247,7 +252,7 @@ button {
     max-width: 240px;
     color: #1B2D24;
     font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
+    font-size: 34px;
     line-height: 1;
     letter-spacing: -0.02em;
     font-weight: 600;
@@ -257,7 +262,7 @@ button {
     max-width: 270px;
     margin: 12px 0 24px;
     color: #718198;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -274,7 +279,7 @@ button {
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
 }
 
 .experience__grid {
@@ -307,14 +312,14 @@ button {
 .experience-card h3 {
     margin: 0 0 5px;
     color: #1B2C22;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 700;
 }
 
 .experience-card p {
     margin: 0;
     color: #718198;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -445,6 +450,139 @@ button {
     font-weight: 400;
 }
 
+.testimonial-page {
+    width: 100%;
+    height: 480px;
+    padding: 36px 40px 60px;
+    background: #F8FAF6;
+}
+
+.testimonial-page__inner {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial-page__eyebrow {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #294C3A;
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+}
+
+.testimonial-page h2 {
+    margin: 0;
+    color: #1F2E26;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.testimonial-page__quote-mark {
+    display: block;
+    height: 48px;
+    color: #2B4F3B;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 72px;
+    line-height: 1;
+}
+
+.testimonial-page__quote-wrap {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.testimonial-page__nav {
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(33, 56, 46, 0.25);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    color: #1F2E26;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.testimonial-page__content {
+    max-width: 560px;
+}
+
+.testimonial-page__quote {
+    margin: 0;
+    color: #2B3B35;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.testimonial-page__author {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.testimonial-page__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #234E3D;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.testimonial-page__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.testimonial-page__name {
+    color: #1F2E26;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.testimonial-page__date {
+    color: #5B7073;
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+}
+
+.testimonial-page__dots {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimonial-page__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #C7C8C2;
+}
+
+.testimonial-page__dot--active {
+    background: #2B4F3B;
+}
+
 .room-add {
     width: 36px;
     height: 36px;
@@ -457,4 +595,232 @@ button {
     font-family: "Work Sans", sans-serif;
     font-size: 20px;
     line-height: 1;
+}
+
+.gallery-page {
+    width: 100%;
+    height: 615px;
+    padding: 46px 40px 48px;
+    background: #FFFFFF;
+}
+
+.gallery-heading {
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+}
+
+.gallery-heading span,
+.packages-heading span {
+    color: #31583A;
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.gallery-heading h2,
+.packages-heading h2 {
+    margin: 10px 0 0;
+    color: #1B2D24;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.gallery-grid {
+    height: 390px;
+    margin-top: 38px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 14px;
+}
+
+.gallery-photo {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.gallery-photo--forest {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.gallery-photo--snow {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.gallery-photo--hiking {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.gallery-photo--fog {
+    grid-column: 3 / 5;
+    grid-row: 2;
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.packages-page {
+    width: 100%;
+    height: 615px;
+    padding: 40px;
+    background: #F8FAF6;
+}
+
+.packages-heading {
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+}
+
+.packages-heading h2 {
+    margin-top: 10px;
+}
+
+.packages-heading p {
+    margin: 10px 0 0;
+    color: #718198;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+}
+
+.packages-grid {
+    height: 400px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.package-card {
+    position: relative;
+    height: 390px;
+    padding: 30px 26px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E0E6E9;
+    border-radius: 5px;
+    background: #FFFFFF;
+    color: #27382F;
+    font-family: "Work Sans", sans-serif;
+}
+
+.package-card--featured {
+    height: 410px;
+    border-color: #14201A;
+    background: #14201A;
+    color: #FFFFFF;
+}
+
+.package-card__badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    padding: 7px 18px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background: #A96800;
+    color: #FFFFFF;
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.package-card h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.package-card__price {
+    margin: 12px 0 22px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px;
+}
+
+.package-card__price strong {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.package-card__price span {
+    color: #8390A2;
+    font-family: "Work Sans", sans-serif;
+    font-size: 13px;
+}
+
+.package-card__features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.package-card__features li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #DCE3E5;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+}
+
+.package-card--featured .package-card__features li {
+    border-bottom-color: #35433D;
+}
+
+.package-card__features li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: #31583A;
+    font-weight: 700;
+}
+
+.package-card--featured .package-card__features li::before {
+    color: #D18408;
+}
+
+.package-card__button {
+    min-width: 124px;
+    margin: auto auto 0;
+    padding: 12px 18px;
+    border: 2px solid #31583A;
+    border-radius: 4px;
+    background: #FFFFFF;
+    color: #31583A;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.package-card__button:hover {
+    border-color: #31583A;
+    background: #31583A;
+    color: #FFFFFF;
+}
+
+.package-card--featured .package-card__button {
+    border-color: #A96800;
+    background: #A96800;
+    color: #FFFFFF;
+}
+
+.package-card--featured .package-card__button:hover {
+    border-color: #D18408;
+    background: #D18408;
 }
