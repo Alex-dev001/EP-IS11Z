@@ -112,7 +112,22 @@ button {
     text-align: center;
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("blackoutbackground.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.64;
+}
+
 .hero__content {
+    position: relative;
+    z-index: 1;
     width: 100%;
     max-width: 900px;
 }
