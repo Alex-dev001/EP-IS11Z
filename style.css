@@ -20,8 +20,10 @@ button {
 }
 
 .contact-bar {
-    padding: 10px 40px;
+    height: 36px;
+    padding: 0 40px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #14201A;
     color: #D7DED9;
@@ -33,7 +35,7 @@ button {
     position: sticky;
     top: 0;
     z-index: 2;
-    min-height: 84px;
+    height: 76px;
     padding: 15px 40px;
     display: flex;
     align-items: center;
@@ -99,7 +101,7 @@ button {
 
 .hero {
     position: relative;
-    min-height: 580px;
+    height: 615px;
     padding: 115px 40px 150px;
     display: flex;
     align-items: flex-start;
@@ -340,7 +342,7 @@ button {
 
 .rooms-page {
     width: 100%;
-    height: 860px;
+    height: 856px;
     padding: 60px 40px;
     background: #FFFFFF;
     font-family: "Work Sans", sans-serif;
@@ -614,7 +616,7 @@ button {
 
 .gallery-page {
     width: 100%;
-    height: 615px;
+    height: 560px;
     padding: 46px 40px 48px;
     background: #FFFFFF;
 }
@@ -687,7 +689,7 @@ button {
 
 .packages-page {
     width: 100%;
-    height: 615px;
+    height: 694px;
     padding: 40px;
     background: #F8FAF6;
 }
@@ -838,4 +840,175 @@ button {
 .package-card--featured .package-card__button:hover {
     border-color: #D18408;
     background: #D18408;
+}
+
+.newsletter-page {
+    width: 100%;
+    height: 300px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E5EFE3;
+    font-family: "Work Sans", sans-serif;
+}
+
+.newsletter-card {
+    position: relative;
+    width: 850px;
+    height: 200px;
+    padding: 36px 40px;
+    border-radius: 7px;
+    background: #FFFFFF;
+    text-align: center;
+}
+
+.newsletter-card__icon {
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #A96800;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.newsletter-card h2 {
+    margin: 0;
+    color: #1B2D24;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.newsletter-card p {
+    margin: 10px 0 26px;
+    color: #718198;
+    font-size: 16px;
+}
+
+.newsletter-card__form {
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #DCE3EA;
+    border-radius: 5px;
+}
+
+.newsletter-card__form input {
+    min-width: 0;
+    flex: 1;
+    padding: 0 14px;
+    border: 0;
+    outline: none;
+    color: #1B2C22;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+}
+
+.newsletter-card__form input::placeholder {
+    color: #91A0B4;
+}
+
+.newsletter-card__form button {
+    padding: 0 18px;
+    border: 0;
+    border-radius: 4px;
+    background: #31583A;
+    color: #FFFFFF;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.site-footer {
+    width: 100%;
+    height: 342px;
+    padding: 38px 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #14201A;
+    color: #FFFFFF;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+}
+
+.site-footer__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.site-footer__brand strong {
+    color: #A96800;
+}
+
+.site-footer__description {
+    max-width: 540px;
+    margin: 18px 0 28px;
+    color: #9BA9B9;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.site-footer__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    font-size: 15px;
+}
+
+.site-footer__nav a {
+    color: #FFFFFF;
+}
+
+.site-footer__social {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.site-footer__social span {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #31583A;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.site-footer__bottom {
+    padding-top: 18px;
+    border-top: 1px solid rgba(215, 222, 217, 0.35);
+}
+
+.site-footer__bottom p {
+    margin: 0;
+    color: #9BA9B9;
+    font-size: 13px;
 }
